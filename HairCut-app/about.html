@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haircut-About Page</title>
+    <link rel="icon" type="image/x-icon" href="https://w7.pngwing.com/pngs/974/26/png-transparent-beard-oil-barbecue-barber-creative-beard-face-text-canada-thumbnail.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    body{
+    padding: 0px;
+    margin: 0px;
+    font-family: calibri;
+    background-color:black;
+}
+nav{display: flex;
+justify-content: space-between;
+align-items: center;
+color: white;
+background-color:rgb(27, 26, 36)}
+
+.links{display: flex;
+list-style: none;
+margin-right: 20px;
+font-size: 14px;}
+.links li{padding: 10px 20px;}
+select{color:white;
+ background: transparent;
+ background-color: red;
+ outline: none;
+ border: none;}
+
+ option{color: black;
+    background-color: white;}
+ 
+#appointment{
+    background-color: red;
+    padding: 8px 10px;
+}
+
+.logo img{height: 80px;
+     width: 200px;
+    margin-left: 20px;}
+.bgimage{
+    background-image: url(./img/carousel-1.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    width: 100%;
+    opacity: 0.7;
+    background-size: 100%;
+}
+.bgimage img{height: 400px;
+    width: 100%;
+    opacity: 0.8;}
+    .bgimage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .bgimage h1{
+        font-size: 60px;
+        font-weight: bolder;
+    }
+    .bgimage p{
+        color: white;
+        margin-top: -35px;
+        margin-left: 30px;
+    }
+
+    .experiencemain{
+    display: flex;
+    justify-content:center;
+    gap: 80px;
+}
+
+
+.experiencemain img{
+    height: 430px;
+    margin-left: 150px;
+}
+.experiance h2{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.experiance{
+    background-color:rgb(27, 26, 36);
+    color: white;
+    height:180px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top: -130px;
+    left: 30px;
+}
+.aboutpara button{
+    padding: 10px 24px;
+    background-color: rgb(238, 7, 7);
+    border: none;
+    font-weight: bold;
+}
+
+.subpara{
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+.aboutpara h1,p{
+    color: white;
+}
+.since{
+    text-align: center;
+    color: white;
+    background-color:rgb(27, 26, 36);
+    height: 150px;
+    width: 250px;
+}
+.clients{
+    text-align: center;
+    color: white;
+    background-color:rgb(27, 26, 36);
+    height: 150px;
+    width: 250px;
+}
+
+.ourbarber{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+.ourbarber button{
+    padding: 12px 24px;
+    background-color:red;
+    font-weight: bold;
+    color: black;
+    border: none;
+}
+
+.barberimages{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.barberimages div{
+    width: 250px;
+    height: 400px;
+    color: white;
+    padding-bottom: 15px;
+    background-color:rgb(27, 26, 36);
+}
+.barberimages img{
+    width: 100%;
+}
+.barberimages p{
+    color: red;
+    font-size: 16px;
+    /* font-weight: bold; */
+}
+
+
+footer{color: white;
+    height: 300px;
+    width: 100%;
+    background-color: #161616;
+    display: flex;
+    justify-content:space-around;
+}
+footer li{
+    color: grey;
+}
+footer h2{
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.getintouch i {
+    background-color: black;
+    padding: 7px;
+}
+.icons{
+    display:flex;
+    gap: 20px;
+    justify-content:flex-start;
+    align-items: center;
+    height: 60px;
+}
+.icons i{
+    align-self: center;
+    background-color:black;
+    color: red;
+    padding: 8px 10px;
+    
+}
+
+.email{
+    display: flex;
+}
+.email input{
+    padding: 15px;
+    width: 250px;
+    background-color:white;
+    color: black;
+    border: none;
+    outline: none;
+}
+.email button{
+    background-color:red;
+    border: none;
+    outline: none;
+    color: white;
+}
+li{
+    list-style: none;
+}
+.copy{
+    text-align: center;
+    padding: 15px 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width:1350px){
+    body{
+        padding: 0px;
+        margin: 0px;
+        font-family: calibri;
+        background-color:black;
+    }
+    nav{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0px;
+    color: white;
+    background-color:rgb(27, 26, 36)}
+    
+    .links{display: flex;
+    list-style: none;
+    margin-right: 10px;
+    font-size: 12px;}
+    .links li{padding: 5px 9px;}
+    select{color:white;
+     background: transparent;
+     background-color: red;
+     outline: none;
+     border: none;}
+    
+     option{color: black;
+        background-color: white;}
+     
+    #appointment{
+        background-color: red;
+        padding: 5px 10px;
+        
+    }
+    
+    .logo img{height: 50px;
+         width: 140px;
+        margin-left: 1px;}
+    
+    .experiencemain{
+        display: flex;
+        justify-content:center;
+        gap: 20px;
+        margin-top: -180px;
+    }
+    
+    
+    .experiencemain img{
+        height: 350px;
+        width: 230px;
+        margin-left: 30px;
+    }
+    .experiance h2{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .experiance{
+        background-color:rgb(27, 26, 36);
+        color: white;
+        height:130px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        top: -70px;
+        left: 10px;
+    }
+    .aboutpara button{
+        padding: 6px 15px;
+        background-color: rgb(238, 7, 7);
+        border: none;
+        font-weight: bold;
+    }
+    
+    .subpara{
+        display: flex;
+        gap: 10px;
+        color: white;
+    }
+    .aboutpara h1{
+        font-size: 20px;
+        color: white;
+    }
+    .aboutpara p{
+        font-size: 14px;
+        margin-top: -20px;
+    }
+    .since{
+        text-align: center;
+        color: white;
+        background-color:rgb(27, 26, 36);
+        height: 110px;
+        width: 182px;
+        font-size: 12px;
+    }
+    .since h3{
+        margin-bottom: 30px;
+    }
+    .clients{
+        text-align: center;
+        color: white;
+        background-color:rgb(27, 26, 36);
+        height: 110px;
+        width: 182px;
+        font-size: 12px;
+    }
+    .clients h3{
+        margin-bottom: 30px;
+    }
+
+    
+    
+    .ourbarber{
+        text-align: center;
+        color: white;
+        font-size: 18px;
+    }
+    .ourbarber button{
+        padding: 12px 24px;
+        background-color:red;
+        font-weight: bold;
+        color: black;
+        border: none;
+    }
+    
+    .barberimages{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    .barberimages div{
+        width: 150px;
+        height: 260px;
+        color: white;
+        padding-bottom: 15px;
+        background-color:rgb(27, 26, 36);
+    }
+    .barberimages img{
+        width: 100%;
+    }
+    .barberimages h2{
+        font-size: 19px;
+    }
+    .barberimages p{
+        color: red;
+        font-size: 14px;
+        /* font-weight: bold; */
+    }
+    
+    footer{color: white;
+        height: 250px;
+        width: 100%;
+        background-color: #161616;
+        display: flex;
+        justify-content:space-around;
+    }
+    footer li{
+        color: grey;
+        font-size: 14px;
+    }
+    footer h2{
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    
+    .getintouch i {
+        background-color: black;
+        padding: 7px;
+    }
+    .icons{
+        display:flex;
+        gap: 10px;
+        justify-content:flex-start;
+        align-items: center;
+        height: 60px;
+    }
+    .icons i{
+        align-self: center;
+        background-color:black;
+        color: red;
+        padding: 8px 10px;
+        
+    }
+    
+    .email{
+        display: flex;
+    }
+    .email input{
+        padding: 10px;
+        width: 150px;
+        background-color:white;
+        color: black;
+        border: none;
+        outline: none;
+    }
+    .email button{
+        background-color:red;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    li{
+        list-style: none;
+        
+    }
+    .copy{
+        text-align: center;
+        padding: 10px 0px;
+        font-size: 14px;
+    }
+    .caroselheadings{
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, blue, alpha);
+    }
+    
+    body{
+        background-color: black;
+    }
+    
+    .links a{
+        text-decoration: none;
+        color: white;
+    }
+    .headings{
+        margin-top: -250px;
+    }
+    
+    /* .sidebuttons{
+        position: relative;
+        top: -400px;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .sidebuttons button{background: transparent;
+        border: none;}
+    .sidebuttons i{
+        font-size: 50px;
+        color: white;
+    } */
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./Screenshot 2023-08-20 210536.png" alt="">
+        </div>
+        <ul class="links">
+            <li><a href="./haircut.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./services.html">SERVICES</a></li>
+            <!-- <li>PAGES -->
+
+                <select name="" id="" onchange="pagess(this.value)">
+                    <option id="pageslink" value="PAGES">PAGES</option>
+                    <option value="pricingplan.html">Pricing Plan</option>
+                    <option value="ourbarbers.html">Our Barber</option>
+                    <option value="workinghours.html">Working Hours</option>
+                    <option value="testimonial.html">Testimonial</option>
+                    <option value="404page.html">404 Page</option>
+                </select>
+            <!-- </li> -->
+            <li><a href="./contact.html">CONTACT</a></li>
+            <li id="appointment"><a href="./haircut.html">APPOINTMENT</a><i style="padding-left: 10px;" class="fa-solid fa-arrow-right" style="color: #f4f7fa;"></i> </li>
+        </ul>
+    </nav>
+    <div class="bgimage">
+        <div class="headings">
+            <h1>ABOUT</h1>
+            <P><a href="./haircut.html">HOME</a>/ PAGES / <span><a style="color: red; font-weight: bold;" href="./about.html">ABOUT</a></span></P>
+        </div>
+    </div><br><br><br>
+
+
+    <div class="experiencemain">
+        <div class="imageheadings">
+            <div>
+                <img src="https://themewagon.github.io/haircut/img/about.jpg" alt="">
+            </div>
+            <div class="experiance">
+                <h2><span style="color: red;">25 YEARS </span><br> EXPERIENCE</h2>
+            </div>
+        </div>
+        <div class="aboutpara">
+            <button>About Us</button>
+            <h1>MORE THAN JUST A HAIRCUT. <br> LEARN MORE ABOUT US!</h1><br>
+            <p>
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam <br> amet diam et eos.Clita erat ipsum et lorem et sit, sed stet lorem sit clita <br> duo justo magna dolore erat amet
+                <br>
+                Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est <br> diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit <br> at, sed sit sanctus dolor eos.
+            </p><br>
+            <div class="subpara">
+                <div class="since">
+                    <h3>SINCE 1990</h3>
+                    <p>Tempor erat elitr rebum at clita. <br> Diam dolor diam ipsum sit. <br> Aliqu diam amet diam et eos.</p>
+                </div>
+                <div class="clients">
+                    <h3>1000+ CLIENTS</h3>
+                    <p>Tempor erat elitr rebum at clita. <br> Diam dolor diam ipsum sit. <br> Aliqu diam amet diam et eos.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- our barber meet our barber -->
+
+    <div class="ourbarber">
+        <button>Our Barber</button><br>
+        <h2>MEET OUR BARBER</h2>
+    </div><br>
+
+    <!-- barber images -->
+
+    <div class="barberimages">
+        <div style="text-align: center;">
+            <img src="https://themewagon.github.io/haircut/img/team-1.jpg" alt="">
+            <h2>BARBER NAME</h2>
+            <p>Designation</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://themewagon.github.io/haircut/img/team-2.jpg" alt="">
+            <h2>BARBER NAME</h2>
+            <p>Designation</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://themewagon.github.io/haircut/img/team-3.jpg" alt="">
+            <h2>BARBER NAME</h2>
+            <p>Designation</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://themewagon.github.io/haircut/img/team-4.jpg" alt="">
+            <h2>BARBER NAME</h2>
+            <p>Designation</p>
+        </div>
+    </div><br><br><br><br>
+
+    <footer>
+        <div class="getintouch">
+            <ul>
+                <h2>GET IN TOUCH</h2>
+                <li><i class="fa-solid fa-location-dot" style="color: #ef0606;"></i> 123 Street, New York, USA</li><br>
+                <li><i class="fa-solid fa-phone" style="color: #f50505;"></i> +012 345 67890</li><br>
+                <li><i class="fa-solid fa-envelope" style="color: #f2020e;"></i> info@example.com</li>
+            </ul>
+        </div>
+
+        <div class="quicklinks">
+            <h2>QUICK LINKS</h2>
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Our Services</li>
+                <li>Terma & Conditions</li>
+                <li>Support</li>
+            </ul>
+        </div>
+
+        <div class="newsletter">
+            <h2>NEWSLETTER</h2>
+            <div class="email">
+                <input type="text" placeholder=" Your email">
+                <button>SignUp</button>
+            </div><br>
+            <div class="icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+    <div class="copy">
+        <p>&copy <ins>Your Site Name ,</ins> All Rights Reserved. </p>
+    </div>
+
+
+
+    <script>
+        function pagess(src){
+    window.location=src;
+}
+    </script>
+</body>
+</html>
